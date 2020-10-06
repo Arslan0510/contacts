@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SearchBox from '../common/search';
+import Search from '../common/materialSearch';
 
 export class index extends Component {
   state = {
@@ -15,11 +15,10 @@ export class index extends Component {
   };
 
   render() {
-    const { searchQuery } = this.state;
     return (
       <div>
         <h1>Edit Contact</h1>
-        <SearchBox value={searchQuery} onChange={this.handleSearch} />
+        <Search />
       </div>
     );
   }

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import ListGroup from '../common/listGroup';
 import { withStyles } from '@material-ui/core';
-import { EditIcon, DeleteIcon } from '@material-ui/icons';
 import _ from 'lodash';
 //core components
 import GridItem from '../common/grid/gridItem';
 import GridContainer from '../common/grid/gridContainer';
-import Table from '../common/table';
 import Card from '../common/card/card';
 import CardHeader from '../common/card/cardHeader';
 import CardBody from '../common/card/cardBody';
@@ -16,9 +13,6 @@ import CardFooter from '../common/card/cardFooter';
 import { paginate } from '../../utils/paginate';
 import ContactTable from '../contactTable';
 import Pagination from '../common/pagination';
-
-const profileImage =
-  'https://res.cloudinary.com/wfdns6x2g6/image/upload/v1509007989/user_psolwi.png';
 
 const styles = {
   cardCategoryWhite: {
